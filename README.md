@@ -28,14 +28,17 @@ o EDF file that contains the channels RIGHT and LEFT
 o Excel file with the columns EpochNo and Stage (NR, R, W)
 
 Coherence_FREQ_DOMAIN_BANDS.py
+
 o Expected output: tables reporting mean ± SD coherence for each sleep stage and for
 every frequency band.
 
 Correlation_interhemispheric_time_domain_TABLE.py
+
 o Expected output: for each stage, a table with the mean ± SD of two metrics:
 Crosscorrelation and Pearson correlation.
 
  Phase_locking_interhemispheric_time_TABLE.py
+ 
 o Expected output: for stage NR, a table with the mean ± SD PhaseLocking Value
 (PLV).
 
