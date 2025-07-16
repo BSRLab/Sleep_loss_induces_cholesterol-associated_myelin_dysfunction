@@ -20,20 +20,27 @@ Required packages:
 readxl_1.4.5 lmerTest_3.1-3 lme4_1.1-37 Matrix_1.6-5
 
 DEMO
+
 Input for the Python and R scripts
+
 EDF file that contains the channels RIGHT and LEFT
+
 Excel file with the columns EpochNo and Stage (NR, R, W)
+
 Coherence_FREQ_DOMAIN_BANDS.py
 o Expected output: tables reporting mean ± SD coherence for each sleep stage and for
 every frequency band.
+
 Correlation_interhemispheric_time_domain_TABLE.py
 o Expected output: for each stage, a table with the mean ± SD of two metrics:
 Crosscorrelation and Pearson correlation.
+
  Phase_locking_interhemispheric_time_TABLE.py
 o Expected output: for stage NR, a table with the mean ± SD PhaseLocking Value
 (PLV).
 
 LME_statistics_intensity.R
+
 o Input: the Excel file containing the columns Intensity (numeric), Condition
 (categorical) and Rat (categorical).
 o Expected output:
