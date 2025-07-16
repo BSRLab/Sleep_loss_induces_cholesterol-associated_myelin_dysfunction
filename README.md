@@ -12,7 +12,7 @@ Codes:
 SOFTWARE REQUIREMENTS
 Python ≥ 3.10
 
-Core libraries to install: mne 1.8.0, mneconnectivity 0.7.0, numpy 1.26.4, pandas 2.3.1,
+Core libraries to install: mne 1.8.0, mne_connectivity 0.7.0, numpy 1.26.4, pandas 2.3.1,
 matplotlib 3.8.0, scipy 1.11.4
 
 R = 4.3.2
@@ -35,7 +35,7 @@ every frequency band.
 Correlation_interhemispheric_time_domain_TABLE.py
 
 - Expected output: for each stage, a table with the mean ± SD of two metrics:
-Crosscorrelation and Pearson correlation.
+Cross-correlation and Pearson correlation.
 
 Phase_locking_interhemispheric_time_TABLE.py
  
@@ -48,7 +48,7 @@ LME_statistics_intensity.R
 (categorical) and Rat (categorical).
 
 Expected output:
-- likelihoodratio ANOVA table comparing two randomintercept mixed
+- likelihoodratio ANOVA table comparing two random intercept mixed
 models (null vs. + Condition)
 - diagnostic plots: residual QQ plot, residualvsfit scatter, residual
 histogram.
