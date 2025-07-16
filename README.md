@@ -23,30 +23,31 @@ DEMO
 
 Input for the Python codes:
 
-o EDF file that contains the channels RIGHT and LEFT
+- EDF file that contains the channels RIGHT and LEFT
 
-o Excel file with the columns EpochNo and Stage (NR, R, W)
+- Excel file with the columns EpochNo and Stage (NR, R, W)
 
 Coherence_FREQ_DOMAIN_BANDS.py
 
-o Expected output: tables reporting mean ± SD coherence for each sleep stage and for
+- Expected output: tables reporting mean ± SD coherence for each sleep stage and for
 every frequency band.
 
 Correlation_interhemispheric_time_domain_TABLE.py
 
-o Expected output: for each stage, a table with the mean ± SD of two metrics:
+- Expected output: for each stage, a table with the mean ± SD of two metrics:
 Crosscorrelation and Pearson correlation.
 
- Phase_locking_interhemispheric_time_TABLE.py
+Phase_locking_interhemispheric_time_TABLE.py
  
-o Expected output: for stage NR, a table with the mean ± SD PhaseLocking Value
+- Expected output: for stage NR, a table with the mean ± SD PhaseLocking Value
 (PLV).
 
 LME_statistics_intensity.R
 
-o Input: the Excel file containing the columns Intensity (numeric), Condition
+ Input: the Excel file containing the columns Intensity (numeric), Condition
 (categorical) and Rat (categorical).
-o Expected output:
+
+Expected output:
 - likelihoodratio ANOVA table comparing two randomintercept mixed
 models (null vs. + Condition)
 - diagnostic plots: residual QQ plot, residualvsfit scatter, residual
