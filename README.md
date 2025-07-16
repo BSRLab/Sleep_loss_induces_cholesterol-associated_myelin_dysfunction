@@ -11,8 +11,10 @@ Codes:
 
 SOFTWARE REQUIREMENTS
 Python ≥ 3.10
+
 Core libraries to install: mne 1.8.0, mneconnectivity 0.7.0, numpy 1.26.4, pandas 2.3.1,
 matplotlib 3.8.0, scipy 1.11.4
+
 R = 4.3.2
 Required packages:
 readxl_1.4.5 lmerTest_3.1-3 lme4_1.1-37 Matrix_1.6-5
