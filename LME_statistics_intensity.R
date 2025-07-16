@@ -5,14 +5,7 @@
 require(lme4)
 library(lmerTest)
 library(readxl)
-library(tidyverse)
-library(sjPlot)
-library(jtools)
-library(emmeans)
-# Load the package for multiple comparisons - may need to be installed
-require(multcomp)
-require(Rcpp)
-library(psych)
+
 
 #set the directory to upload dataset
 
