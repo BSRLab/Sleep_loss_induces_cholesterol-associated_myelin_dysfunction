@@ -15,7 +15,7 @@ from scipy import signal
 
 
 
-raw= mne.io.read_raw_edf("C:/Users/Utente/Desktop/file_name", preload=True)
+raw= mne.io.read_raw_edf("C:/Users/Utente/Desktop/GithubSleepLossMyelinEleonora/EDF_example.edf", preload=True)
 
 freq_low = 0.15  # Lower frequency limit in Hz
 freq_high = 40.0  # Upper frequency limit in Hz
@@ -24,7 +24,7 @@ freq_high = 40.0  # Upper frequency limit in Hz
 raw=raw.filter(freq_low, freq_high, fir_design='firwin')
 raw
 
-data1, times = raw.copy().pick_channels(['PARIETAL_RIGHT'])[0]
+data1, times = raw.copy().pick_channels(['PARIRTAL_RIGHT'])[0]
 
 data2, _ = raw.copy().pick_channels(['PARIETAL_LEFT'])[0]
 
@@ -62,7 +62,7 @@ num_windows=num_windows+1
 print("num_windows", num_windows)
 print("window_samples",window_samples)
 
-df_stage_info = pd.read_excel("C:/Users/Utente/Desktop/file_name_staging.xlsx")
+df_stage_info = pd.read_excel("C:/Users/Utente/Desktop/GithubSleepLossMyelinEleonora/STAGING_example.xlsx")
 
 
 window_indices = np.arange(num_windows)
@@ -128,7 +128,7 @@ for i, row in num_windows_data[num_windows_data['Stage'] == 'R'].iterrows():
         mean1=np.mean(data1_window)
         mean2=np.mean(data2_window)
         cross_corr_matrix = np.correlate(data1_window, data2_window, mode='full')
-                time_shift = np.argmax(cross_corr_matrix) - len(data1_window) + 1  # Calculate time shift
+        time_shift = np.argmax(cross_corr_matrix) - len(data1_window) + 1  # Calculate time shift
         time_delay = time_shift / sfreq  # Calculate time delay in seconds
         cross_corr = cross_corr_matrix[np.argmax(cross_corr_matrix)]
                 # Check if the correlation value is above the threshold
