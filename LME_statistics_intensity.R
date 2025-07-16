@@ -9,7 +9,7 @@ library(readxl)
 
 #set the directory to upload dataset
 
-df = read_excel('GFAP_BODIPY.xlsx')
+df = read_excel('C:/.../Intensity_example.xlsx')
 
 
 #######################################
