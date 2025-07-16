@@ -17,7 +17,7 @@ from scipy.stats import gaussian_kde
 
 
 # Data import
-raw= mne.io.read_raw_edf("C:/Users/Utente/Desktop/file_name", preload=True)# Import data file into workspace
+raw= mne.io.read_raw_edf("C:/.../EDF_example.edf", preload=True)# Import data file into workspace
 
 
 # In[3]:
@@ -81,7 +81,7 @@ num_windows=num_windows+1
 print("num_windows", num_windows)
 print("window_samples",window_samples)
 
-df_stage_info = pd.read_excel("C:/Users/Utente/Desktop/file_name_staging.xlsx")
+df_stage_info = pd.read_excel("C:/.../STAGING_example.xlsx")
 
 window_indices = np.arange(num_windows)
 
