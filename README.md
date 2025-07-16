@@ -21,11 +21,11 @@ readxl_1.4.5 lmerTest_3.1-3 lme4_1.1-37 Matrix_1.6-5
 
 DEMO
 
-Input for the Python and R scripts
+Input for the Python codes:
 
-EDF file that contains the channels RIGHT and LEFT
+o EDF file that contains the channels RIGHT and LEFT
 
-Excel file with the columns EpochNo and Stage (NR, R, W)
+o Excel file with the columns EpochNo and Stage (NR, R, W)
 
 Coherence_FREQ_DOMAIN_BANDS.py
 o Expected output: tables reporting mean ± SD coherence for each sleep stage and for
