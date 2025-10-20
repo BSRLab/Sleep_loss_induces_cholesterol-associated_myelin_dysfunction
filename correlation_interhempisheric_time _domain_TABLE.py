@@ -264,6 +264,8 @@ for i, row in num_windows_data[num_windows_data['Stage'] == 'NR'].iterrows():
         mean2 = np.mean(data2_window)
         cross_corr_matrix = np.corrcoef(data1_window, data2_window)
         cross_corr = cross_corr_matrix[0, 1]
+        #z Fisher Transformation
+        #cross_corr = 0.5 * np.log((1 + cross_corr) / (1 - cross_corr))
 
         if cross_corr >= threshold:
             correlation_nr.append(cross_corr)
@@ -281,6 +283,8 @@ for i, row in num_windows_data[num_windows_data['Stage'] == 'R'].iterrows():
         mean2 = np.mean(data2_window)
         cross_corr_matrix = np.corrcoef(data1_window, data2_window)
         cross_corr = cross_corr_matrix[0, 1]
+        #z Fisher Transformation
+        #cross_corr = 0.5 * np.log((1 + cross_corr) / (1 - cross_corr))
 
         if cross_corr >= threshold:
             correlation_r.append(cross_corr)
@@ -297,6 +301,8 @@ for i, row in num_windows_data[num_windows_data['Stage'] == 'W'].iterrows():
         mean2 = np.mean(data2_window)
         cross_corr_matrix = np.corrcoef(data1_window, data2_window)
         cross_corr = cross_corr_matrix[0, 1]
+        #z Fisher Transformation
+        #cross_corr = 0.5 * np.log((1 + cross_corr) / (1 - cross_corr))
 
         if cross_corr >= threshold:
             correlation_w.append(cross_corr)
